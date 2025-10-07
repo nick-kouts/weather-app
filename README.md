@@ -50,3 +50,18 @@ the weather forecast for a given location in either current, hourly or daily for
 ## Requirements
  A web browser. Chrome was used for this project, version 135.0.7049.85 (Official Build) (64-bit).
 
+## 🌦️ Angular Weather App — Dockerized & Deployed
+
+A responsive weather dashboard built with Angular and REST API integration. Containerized using a multi-stage Docker build and served via Nginx.
+
+### 🚀 Live Image
+**Docker Hub**: [nickkouts197/weather-app](https://hub.docker.com/r/nickkouts197/weather-app)  
+Pull it locally:
+```bash
+docker pull nickkouts197/weather-app
+docker run -p 8888:80 nickkouts197/weather-app
+
+
+
+
+
