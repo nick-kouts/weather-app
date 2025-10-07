@@ -1,0 +1,21 @@
+
+<div class="imgBg" id="outerDiv">
+ <label>Location: {{ location.charAt(0).toUpperCase() + location.slice(1) }} </label><br><br> 
+ 
+ <div id="innerDiv">
+  <div id="forecast" *ngFor = "let df of dailyForecast">
+  
+   <div [ngStyle]="{color:'yellow'}">{{ df.day_of_week }}</div>
+   
+   <div [ngStyle]="{color:'ivory'}"><img alt="condition icon" ngSrc="{{df.icon}}" width="50" height="50">
+    {{ df.temp  }}&#176;</div>
+  
+   <div>wind: {{ df.wind_dir }} {{ df.wind }} mph</div>
+   <div>wind gust: {{ df.gust_mph }} mph</div>
+   <div>humidity {{ df.humidity }}&#37;</div>
+   <div>dewpoint {{ df.dewpoint }}&#37;</div>
+   <div>rain: {{ df.rain }}&#37;</div>
+   <div>snow: {{ df.snow }}&#37;</div>
+  </div>
+ </div>
+</div>

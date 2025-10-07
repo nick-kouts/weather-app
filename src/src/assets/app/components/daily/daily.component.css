@@ -1,0 +1,65 @@
+
+   div#outerDiv {
+    position:absolute;
+    top:120px;
+    left:5%;
+    width:90%;
+    border:2px solid maroon;
+    border-radius:10px;;
+    padding-top:10px;
+    padding-bottom:50px;
+    opacity:1;  
+   }
+   
+   div.imgBg {
+    background-image: url('/assets/sunny_sky.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   }
+
+   div#innerDiv {
+    position:relative;
+    left:10%;   
+    width:76%;   
+    display:flex;
+    flex-flow:row wrap;
+    flex-basis:200px;
+    gap:10px;
+    border:2px dotted gray;
+    border-radius:10px;
+    box-shadow: 10px 10px 5px black; 
+    padding:10px;
+    background:transparent;
+   }
+   
+   div#forecast {
+    display:flex;
+    flex-flow:column wrap;
+    flex-basis:175px;
+    align-items:left; 
+    gap:5px;   
+    border:5px double orange;
+    border-radius:10px;
+    padding:2px; 
+    background:darkblue;
+    opacity:.8;  
+   }
+   
+   div#forecast>div {  
+    padding:2px 10px;
+    font-weight:bold;
+    color:lightgreen;
+   }
+   
+   label {
+    text-transform:capitalize;
+    color:maroon;
+    font-size:20px;
+    font-weight:bold;  
+    padding-left:10px
+   }
+
+   img {
+    float:left;  
+   }
