@@ -1,0 +1,21 @@
+
+<div id="outerDiv">
+ <label>Location: {{ location.charAt(0).toUpperCase() + location.slice(1) }} </label><br><br> 
+ 
+ <div id="innerDiv">
+  <div id="forecast" *ngFor = "let hf of hourlyForecast">
+  
+   <div>{{ hf.hour }} {{ hf.am_pm }}</div>
+
+   <div [ngStyle]="{color:'purple'}"><img alt="condition icon" ngSrc="{{hf.icon}}" width="50" height="50">
+    {{ hf.temp  }}&#176;</div>
+  
+   <div>wind: {{ hf.wind_dir }} {{ hf.wind }} mph</div>
+   <div>wind gust: {{ hf.gust_mph }} mph</div>
+   <div>humidity {{ hf.humidity }}&#37;</div>
+   <div>dewpoint {{ hf.dewpoint }}&#37;</div>
+   <div>rain: {{ hf.rain }}&#37;</div>
+   <div>snow: {{ hf.snow }}&#37;</div>
+  </div>
+ </div>
+</div>

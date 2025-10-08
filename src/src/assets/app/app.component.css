@@ -1,0 +1,20 @@
+
+nav {
+ border:2px solid green;
+ border-radius:5px;
+ width:200px; 
+ padding:5px 20px;
+ margin-bottom:5px;
+ background:black;
+}
+
+nav a {
+ color:yellow;   
+ margin-left:15px;
+ padding-left:0px;  
+}
+
+nav a:hover {
+ color:red;
+ text-decoration:none;
+}

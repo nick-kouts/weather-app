@@ -1,0 +1,17 @@
+
+<div>
+<h2>{{ title }}</h2>
+
+ <header>
+  <!-- nav links -->
+  <nav>
+   <a [ngStyle]="hideLinks ? linkDisabled : linkEnabled" routerLink="/">Current</a>
+   <a [ngStyle]="hideLinks ? linkDisabled : linkEnabled" [routerLink]="['hourly', location]">Hourly</a>
+   <a [ngStyle]="hideLinks ? linkDisabled : linkEnabled" [routerLink]="['daily', location]">Daily</a> 
+  </nav>
+ </header>
+ 
+ <main>
+  <router-outlet></router-outlet>
+ </main>
+</div>
