@@ -20,11 +20,9 @@ jobs:
           node-version: '18'
 
       - name: Install dependencies
-        working-directory: src/weather-app
         run: npm ci
 
       - name: Build Angular app
-        working-directory: src/weather-app
         run: npm run build -- --configuration production
 
       - name: Docker build
