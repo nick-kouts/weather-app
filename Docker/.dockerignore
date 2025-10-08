@@ -1,0 +1,28 @@
+# Node junk
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Angular build output
+dist/
+tmp/
+out-tsc/
+
+# Git metadata
+.git/
+.gitignore
+
+# OS clutter
+.DS_Store
+Thumbs.db
+
+# IDE/editor files
+.vscode/
+.idea/
+
+# Dockerfile and config (optional if not needed inside image)
+Dockerfile
+.dockerignore
+
+# Docs and markdown (optional)
+README.md
